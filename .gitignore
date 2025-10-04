@@ -1,27 +1,54 @@
+# ==========================================
 # Godot-specific
-.import/
-.export/
-.godot/
+# ==========================================
+.import/           # Archivos de importación de assets
+.export/           # Configuración de exportación
+.godot/            # Configuración local del editor
+.project.godot.user   # Configuración local del proyecto (opcional)
 
+# ==========================================
+# Mono / .NET (C#)
+# ==========================================
+.mono/             # Librerías locales de Godot Mono
+bin/               # Carpeta de compilación
+obj/               # Carpeta de objetos intermedios
+*.csproj
+*.sln
+*.userprefs
+
+# ==========================================
 # OS-specific
+# ==========================================
 .DS_Store
 Thumbs.db
 ehthumbs.db
 Icon?
 Desktop.ini
 
-# Backup files
+# ==========================================
+# Backup / Temp files
+# ==========================================
 *.tmp
 *.bak
 *.old
 *.orig
+*.log
 
-# VSCode or JetBrains (optional)
+# ==========================================
+# Editors (VSCode / JetBrains)
+# ==========================================
 .vscode/
 .idea/
 
-# Builds
+# ==========================================
+# Builds / Exports
+# ==========================================
 *.exe
 *.apk
 *.pck
 *.zip
+
+# ==========================================
+# Optional: ignore any local assets you don't want in repo
+# ==========================================
+# Assets/Temp/
